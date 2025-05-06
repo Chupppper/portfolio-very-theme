@@ -1,131 +1,273 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <base href="/" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="Description" content="Demonstration for portfolio-very-theme" />
 
-<head>
-  <base href="/">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="Description" content="Demonstration for portfolio-very-theme">
+    <style>
+      :root,
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
 
-  <style>
-    :root, html, body {
-      margin: 0;
-      padding: 0;
-    }
-    #demo {
-      margin: var(--ddd-spacing-2);
-    }
-    portfolio-very-theme {
-      margin: var(--ddd-spacing-2);
-      border: var(--ddd-border-md);
-      border-radius: var(--ddd-radius-lg);
-    }
-    portfolio-very-theme:hover {
-      box-shadow: var(--ddd-boxShadow-sm);
-    }
-    #example {
-      --portfolio-very-theme-font-size: var(--ddd-font-size-l);
-      background-color: var(--ddd-accent-2);
-      color: var(--ddd-primary-17);
-    }
-  </style>
-  <title>portfolio-very-theme</title>
-</head>
-
-<body>
-  <div id="demo">
-    <h1>portfolio-very-theme</h1>
-    <!-- this is going to do whatever the tag's defaults are -->
-    <h2>Default</h2>
-    <portfolio-very-theme></portfolio-very-theme>
-    <h2>Slot usage</h2>
-    <portfolio-very-theme data-accent="2" data-primary="17"><div>Sample slot content</div></portfolio-very-theme>
-    <h2>Property usage</h2>
-    <portfolio-very-theme id="example" title="Sample property title"></portfolio-very-theme>
-  </div>
-  <script type="module" src="./portfolio-very-theme.js"></script>
-
-  <!-- Take HAX, the Web and you further down the rabbit hole -->
-  <style>
-    #follow-the-white-rabbit {
-      margin: var(--ddd-spacing-4) auto 64px  16px;
-      background-color: var(--ddd-accent-4);
-      color: black;
-    }
-    #follow-the-white-rabbit[open] summary {
-      background-color: var(--ddd-accent-4) !important;
-      color: black;
-    }
-    #follow-the-white-rabbit[open] .content {
-      padding: 0 var(--ddd-spacing-4);
-    }
-    #follow-the-white-rabbit ul,
-    #follow-the-white-rabbit li {
-      padding: 0;
-      margin: 0;
-    }
-    #follow-the-white-rabbit li {
-      font-size: var(--ddd-font-size-xs);
-      list-style: none;
-    }
-    #follow-the-white-rabbit li strong,
-    #follow-the-white-rabbit li a {
-      padding: var(--ddd-spacing-2) var(--ddd-spacing-4);
-      color: black;
-      display: block;
-      font-weight: bold;
-    }
-    #follow-the-white-rabbit li:focus-within a,
-    #follow-the-white-rabbit li:hover a {
-      background-color: black;
-      color: yellow;
-    }
-  </style>
-  <details id="follow-the-white-rabbit" open>
-    <summary>How to Develop</summary>
-    <div class="content">
-      <p>
-      
-        <strong>Checkout project on github:</strong> <a href="https://github.com/Chupppper/portfolio-very-theme" target="_blank" rel="nofollow">Chupppper/portfolio-very-theme</a>
-        
-      </p>
-      <p>
-        You can edit the current page by modifying <code>index.html</code><br />
-        To edit your <strong>portfolio-very-theme</strong> tag, modify <code>src/portfolio-very-theme.js</code>.
-        This file contains all the HTML, CSS and JavaScript used to render your elements above!
-      </p>
-      <p>
-        Web components are easy to follow once you get used to their pattern.
-        Below are links to help on your journey. Good luck, we need you!
-      </p>
-      <ul>
-        <li><a href="https://haxtheweb.org/documentation/ddd" target="_blank">🧑‍🎨 Learn DDD HAX Design system</a></li>
-        <li><a href="https://lit.dev/playground/" target="_blank" rel="nofollow">🔥 Learn Lit</a></li>
-        <li><a href="https://hax.psu.edu" target="_blank">🧙 HAX The Web @ Penn State</a></li>
-      </ul>
-      <h2>Join and Share HAX</h2>
-      <ul>
-        <li><a href="https://github.com/haxtheweb/issues/issues" target="_blank" rel="nofollow">🔮 Ideas to HAX Harder, Better, Faster, Stronger</a></li>
-        <li><a href="https://bit.ly/hax-the-linkedin" target="_blank" rel="nofollow">👔 Share on LinkedIn</a></li>
-        <li><a href="https://bit.ly/hax-the-x" target="_blank" rel="nofollow">🧵 Tweet on X</a></li>
-        <li><a href="https://bit.ly/hax-discord" target="_blank" rel="nofollow">💬 Join Community</a></li>
-      </ul>
-      <h2>Learn the languages and tools</h2>
-      <ul>
-        <li><a href="https://w3schools.com" target="_blank" rel="nofollow">🌐 Learn HTML</a></li>
-        <li><a href="https://web.dev/learn/css/" target="_blank" rel="nofollow">🎨 Learn CSS</a></li>
-        <li><a href="http://Javascript.info" target="_blank" rel="nofollow">💻 Learn JavaScript (JS)</a></li>
-        <li><a href="https://gitimmersion.com" target="_blank" rel="nofollow">🦺 Learn Git / Github</a></li>
-        <li><a href="https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/" target="_blank" rel="nofollow">📦 Learn NPM</a></li>
-        <li><a href="http://learnux.io" target="_blank" rel="nofollow">📐 Learn UX / UI development</a></li>
-      </ul>
-      <h2>Find purpose and inspiration</h2>
-      <ul>
-        <li><a href="https://www.youtube.com/watch?v=eC7xzavzEKY" target="_blank" rel="nofollow">🐟 This is Water - David Foster Wallace</a></li>
-        <li><a href="https://www.youtube.com/watch?v=kYfNvmF0Bqw" target="_blank" rel="nofollow">🏗️ Secrets of Life - Steve Jobs</a></li>
-        <li><strong>💡 <em>Never. Stop. Innovating.</em></strong></li>
-      </ul>
+      .profile-pic {
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        border: 4px solid var(--ddd-theme-primary);
+      }
+      .norwin-pic {
+        width: 450px;
+        height: 450px;
+        border-radius: 50%;
+        border: 4px solid var(--ddd-theme-primary);
+      }
+      .resume-pic {
+        width: 450px;
+        height: 450px;
+        margin-right: 20px;
+        border: 4px solid var(--ddd-theme-primary);
+      }
+      .bio-text {
+        max-width: 700px;
+        text-align: left;
+        margin-left: auto;
+        font-size: var(--ddd-spacing-6);
+        padding-top: 10px;
+      }
+      .work-text {
+        max-width: 600px;
+        text-align: left;
+        margin-left: auto;
+        font-size: var(--ddd-spacing-1);
+        line-height: 1.6;
+      }
+      .resume-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--ddd-spacing-4);
+        max-width: 1200px;
+        width: 100%;
+        padding-top: 100px;
+        margin-left: 20px;
+        align-items: center;
+        font-size: var(--ddd-spacing-6);
+      }
+      .about-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--ddd-spacing-4);
+        width: 100%;
+        padding-top: 90px;
+      }
+      .contact-pic {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        border: 4px solid var(--ddd-theme-primary);
+      }
+      .work-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--ddd-spacing-2);
+        max-width: 1000px;
+        width: 100%;
+        padding-top: 100px;
+      }
+      .contact-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100vh;
+        padding: 2rem;
+        box-sizing: border-box;
+        font-size: var(--ddd-spacing-8);
+        overflow: hidden;
+      }
+      @media (max-width: 768px) {
+        .about-content,
+        .profile-pic,
+        .norwin-pic,
+        .resume-pic,
+        .bio-text,
+        .work-text,
+        .resume-content,
+        .about-content,
+        .contact-pic,
+        .work-content,
+        .contact-wrapper {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      @media (max-width: 425px) {
+        .about-content,
+        .profile-pic,
+        .norwin-pic,
+        .resume-pic,
+        .bio-text,
+        .work-text,
+        .resume-content,
+        .about-content,
+        .contact-pic,
+        .work-content,
+        .contact-wrapper {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      @media (max-width: 375px) {
+        .about-content,
+        .profile-pic,
+        .norwin-pic,
+        .resume-pic,
+        .bio-text,
+        .work-text,
+        .resume-content,
+        .about-content,
+        .contact-pic,
+        .work-content,
+        .contact-wrapper {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      @media (max-width: 320px) {
+        .about-content,
+        .profile-pic,
+        .norwin-pic,
+        .resume-pic,
+        .bio-text,
+        .work-text,
+        .resume-content,
+        .about-content,
+        .contact-pic,
+        .work-content,
+        .contact-wrapper {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    </style>
+    <title>portfolio-very-theme</title>
+  </head>
+  <body>
+    <div>
+      <portfolio-very-header></portfolio-very-header>
     </div>
-  </details>
-</body>
+    <portfolio-very-theme data-accent="2" data-primary="2">
+      <portfolio-very-screen class="about" id="1" title="About">
+        <div class="about-content">
+          <img src="Headshot.jpeg" alt="Headshot" class="profile-pic" />
+          <div class="bio-text">
+            <p>
+              Hello everyone my name is Noah Chup and I am a third year majoring in ETI. 
+              I am very passonate about technology and have a strong interest in the human 
+              aspects of technology. I am also very interested in AI and how far that will 
+              take us in the near future/
+            </p>
+          </div>
+        </div>
+      </portfolio-very-screen>
+
+      <portfolio-very-screen class="resume" id="2" title="Resume">
+        <div class="resume-content">
+          <img
+            src="1745689940507-08f06a8b-ad62-4ae2-87aa-e704568c76fa_1.jpg"
+            alt="ResumePJH"
+            class="resume-pic"
+          />
+          <div class="resume-text">
+            <p>
+              As a third year here at Penn State I have had the pleasure of having now tow internships.
+              I have worked with Barry Callebaut both times and have worked on SAP as well as IBM. I was
+              in charge of transitioning the company form SAP to IBM and oversaw around 20 mechanics. I have 
+              also worked in Barry Callebaut's IT department and have learned a lot about the inner workings of the company.
+              I also had the pleasure this year of being the team lead for NLNB Nittny Lion Natinal Bank where our team 
+              was tasked with creating a buisness plan and well as a risk assesment tool to be delivered at the end of the semster
+            </p>
+            <ul>
+              <li>
+                <a
+                  href="https://github.com/paigehohman/portfolio-very-theme/blob/main/Paige%20Hohman%20Resume%202025%20(1).jpg?raw=true"
+                  title="Resume"
+                  target="_blank"
+                >
+                  View Resume
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </portfolio-very-screen>
+
+      <portfolio-very-screen class="projects" id="3" title="Projects">
+        <project-card
+          title="Campus Locations Card List"
+          description="In this project, I created two web components: ddd-card and ddd-card-list, using the HAX toolchain and DDD methodology to replicate a Penn State campus location website with full accuracy. The ddd-card displays a title, label, link, and content, and supports a ddd-primary attribute. The ddd-card-list holds multiple cards and passes the ddd-primary and ddd-accent properties down to each card, ensuring a responsive layout with Flexbox. The project is deployed on Vercel, and the code is available on GitHub."
+          link="https://ddd-card-list-topaz.vercel.app/"
+          link2="https://github.com/paigehohman/ddd-card-list"
+          image="https://github.com/paigehohman/portfolio-very-theme/blob/main/DDD-card-list-image.png?raw=true"
+        ></project-card>
+      </portfolio-very-screen>
+
+      <portfolio-very-screen class="work" id="4" title="Work Experience">
+        <div class="work-content">
+          <img
+            src="https://www.norwinsd.org/pics/NORS_LOGO.gif"
+            alt="Norwin SD"
+            class="norwin-pic"
+          />
+          <div class="work-text">
+            <ul>
+              <li>Incoming IT Intern at Norwin School District</li>
+              <li>Previously a server at Anthony's Coal Fired Pizza</li>
+              <li>Previously a server at Pulp Juice & Smoothie Bar</li>
+            </ul>
+          </div>
+        </div>
+      </portfolio-very-screen>
+
+      <portfolio-very-screen class="contact" id="5" title="Contact">
+        <div class="contact-wrapper">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Google_Contacts_icon.svg/1024px-Google_Contacts_icon.svg.png?20221102143815"
+            alt="Contact Image"
+            class="contact-pic"
+          />
+          <div class="contact-info">
+            <p>Email: paigehohman@gmail.com</p>
+            <p>Phone: 724-900-8081</p>
+            <p>
+              <a
+                href="https://www.linkedin.com/in/paige-hohman-1b80a529a/"
+                title="Visit my LinkedIn profile"
+                target="_blank"
+              >
+                LinkedIn Profile
+              </a>
+            </p>
+          </div>
+        </div>
+      </portfolio-very-screen>
+    </portfolio-very-theme>
+
+    <script type="module" src="./portfolio-very-theme.js"></script>
+    <script type="module" src="./portfolio-very-header.js"></script>
+    <script type="module" src="./portfolio-very-scroll.js"></script>
+    <script type="module" src="./portfolio-very-screen.js"></script>
+    <script type="module" src="./project-card.js"></script>
+  </body>
 </html>
